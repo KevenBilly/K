@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Keven.Demo.SharedLibrary</PackageId>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <Authors>Keven</Authors>
+    <PackageLicenseExpression>
+      MS-KL
+    </PackageLicenseExpression>
+    <PackageProjectUrl>
+      http://github.com/markjprice/cs8dotnetcore3
+    </PackageProjectUrl>  
+    <PackageIcon>icon.jpg</PackageIcon>
+    <PackageRequireLicenseAcceptance>true
+    </PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+    Example shared library packaged for NuGet.
+    </PackageReleaseNotes>
+    <Description>
+      Keven-Pack-Demo
+    </Description>
+    <Copyright>
+    Copyright © 2021 Keven Publishing Limited
+    </Copyright>
+    <PackageTags>Pack-Demo</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
